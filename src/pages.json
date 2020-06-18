@@ -8,6 +8,30 @@
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
+		},
+		{
+			"path": "pages/recruiter/recruit/index",
+			"style": {
+				"navigationBarTitleText": "招聘"
+			}
+		},
+		{
+			"path": "pages/recruiter/train/index",
+			"style": {
+				"navigationBarTitleText": "培训"
+			}
+		},
+		{
+			"path": "pages/recruiter/colleague/index",
+			"style": {
+				"navigationBarTitleText": "同事"
+			}
+		},
+		{
+			"path": "pages/recruiter/my/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
 		}
 	],
 	"globalStyle": {

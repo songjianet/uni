@@ -1,6 +1,7 @@
 <script>
 	export default {
-		onLaunch: function() {
+		onLaunch: function(e) {
+			console.log(e) // 拿场景值
 			console.log('App Launch')
 		},
 		onShow: function() {
@@ -14,5 +15,6 @@
 
 <style lang="scss">
 	@import 'uview-ui/index.scss';
+	@import '@/assets/scss/default.scss'
 	/*每个页面公共css */
 </style>
