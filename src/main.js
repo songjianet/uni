@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import App from './App'
 import uView from 'uview-ui'
-
-import tabbar from './components/tabbar.vue'
+import store from '@/store'
+let vuexStore = require('@/store/$u.mixin.js')
 
 Vue.config.productionTip = false
 
 Vue.use(uView)
-
-Vue.component('tab-bar', tabbar)
+Vue.mixin(vuexStore)
 
 App.mpType = 'app'
 
 const app = new Vue({
+  store,
   ...App
 })
 app.$mount()

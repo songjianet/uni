@@ -4,31 +4,31 @@
 	},
 	"pages": [
 		{
-			"path": "pages/recruiter/index/index",
+			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页"
 			}
 		},
 		{
-			"path": "pages/recruiter/recruit/index",
+			"path": "pages/test1/index",
 			"style": {
-				"navigationBarTitleText": "招聘"
+				"navigationBarTitleText": "页面1"
 			}
 		},
 		{
-			"path": "pages/recruiter/train/index",
+			"path": "pages/test2/index",
 			"style": {
-				"navigationBarTitleText": "培训"
+				"navigationBarTitleText": "页面2"
 			}
 		},
 		{
-			"path": "pages/recruiter/colleague/index",
+			"path": "pages/test3/index",
 			"style": {
-				"navigationBarTitleText": "同事"
+				"navigationBarTitleText": "页面3"
 			}
 		},
 		{
-			"path": "pages/recruiter/my/index",
+			"path": "pages/my/index",
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
@@ -40,13 +40,22 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"condition" : {
-		"current": 0,
+	"tabBar": {
 		"list": [
 			{
-				"name": "",
-				"path": "",
-				"query": ""
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath": "pages/test1/index"
+			},
+			{
+				"pagePath": "pages/test2/index"
+			},
+			{
+				"pagePath": "pages/test3/index"
+			},
+			{
+				"pagePath": "pages/my/index"
 			}
 		]
 	}
