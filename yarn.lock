@@ -2315,6 +2315,11 @@ aws4@^1.8.0:
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha1-oXs6jqgRBg501H0wYSJACtRJeuI=
 
+axios-uni@^1.0.2-0:
+  version "1.0.2-0"
+  resolved "https://registry.npm.taobao.org/axios-uni/download/axios-uni-1.0.2-0.tgz#d6d53906c08d36e7ab7fc64b54cc18392860980d"
+  integrity sha1-1tU5BsCNNuerf8ZLVMwYOShgmA0=
+
 babel-jest@^25.5.1:
   version "25.5.1"
   resolved "https://registry.npm.taobao.org/babel-jest/download/babel-jest-25.5.1.tgz?cache=0&sync_timestamp=1588675676770&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-jest%2Fdownload%2Fbabel-jest-25.5.1.tgz#bc2e6101f849d6f6aec09720ffc7bc5332e62853"

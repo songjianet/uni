@@ -10,8 +10,20 @@
 </template>
 
 <script>
+  import { comment } from '@/api/test'
+
   export default {
     name: "index",
+    mounted() {
+      this.getStory()
+    },
+    methods: {
+      getStory() {
+        comment().then(res => {
+          console.log(res)
+        })
+      }
+    }
   }
 </script>
 
