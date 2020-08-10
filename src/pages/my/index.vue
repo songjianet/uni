@@ -5,14 +5,14 @@
       我的
     </view>
     <!-- 与包裹页面所有内容的元素u-page同级，且在它的下方 -->
-    <u-tabbar :list="vuex_tabbar" :mid-button="true"></u-tabbar>
+    <u-tabbar :list="vuex_tabbar" :mid-button="true" />
   </view>
 </template>
 
 <script>
-  export default {
-    name: "index"
-  }
+export default {
+  name: 'Index'
+}
 </script>
 
 <style lang="scss" scoped>

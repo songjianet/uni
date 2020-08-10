@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import uView from 'uview-ui'
 import store from '@/store'
-let vuexStore = require('@/store/$u.mixin.js')
+const vuexStore = require('@/store/$u.mixin.js')
 
 Vue.config.productionTip = false
 

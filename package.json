@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "npm run dev:h5",
+    "lint": "eslint --ext .js,.vue src",
     "build": "npm run build:h5",
     "build:app-plus": "cross-env NODE_ENV=production UNI_PLATFORM=app-plus vue-cli-service uni-build",
     "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
@@ -33,7 +34,8 @@
     "test:h5": "cross-env UNI_PLATFORM=h5 jest -i",
     "test:ios": "cross-env UNI_PLATFORM=app-plus UNI_OS_NAME=ios jest -i",
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
-    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-27920200527001",
@@ -49,8 +51,13 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.0-27920200527001",
     "@dcloudio/uni-stat": "^2.0.0-27920200527001",
     "axios-uni": "^1.0.2-0",
+    "babel-eslint": "^10.1.0",
     "core-js": "^3.6.5",
+    "eslint": "^7.6.0",
+    "eslint-plugin-vue": "^6.2.2",
     "flyio": "^0.6.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
     "regenerator-runtime": "^0.12.1",
     "sass-loader": "^7.0.0",
@@ -83,6 +90,12 @@
     "Android >= 4",
     "ios >= 8"
   ],
+  "lint-staged": {
+    "src/**/*.{js,json,css,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "uni-app": {
     "scripts": {}
   }
