@@ -43,7 +43,7 @@ const store = new Vuex.Store({
         count: 23,
         isDot: false,
         customIcon: false,
-        pagePath: "/pages/my/index"
+        pagePath: '/pages/my/index'
       }
     ]
   },

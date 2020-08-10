@@ -98,5 +98,10 @@
   },
   "uni-app": {
     "scripts": {}
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
