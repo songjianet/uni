@@ -17,14 +17,14 @@ const store = new Vuex.Store({
       {
         iconPath: 'photo',
         selectedIconPath: 'photo-fill',
-        text: '放映厅',
+        text: '页面1',
         customIcon: false,
         pagePath: '/pages/test1/index'
       },
       {
         iconPath: 'https://cdn.uviewui.com/uview/common/min_button.png',
         selectedIconPath: 'https://cdn.uviewui.com/uview/common/min_button_select.png',
-        text: '发布',
+        text: '发布/页面2',
         midButton: true,
         customIcon: false,
         pagePath: '/pages/test2/index'
@@ -32,7 +32,7 @@ const store = new Vuex.Store({
       {
         iconPath: 'play-right',
         selectedIconPath: 'play-right-fill',
-        text: '直播',
+        text: '页面3',
         customIcon: false,
         pagePath: '/pages/test3/index'
       },
