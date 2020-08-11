@@ -1,8 +1,9 @@
-# uni-app + uView UI
+# uni-app + uView UI + luch-request
 
 ## 相关链接
 - [uni-app](https://uniapp.dcloud.io/)
 - [uView UI](http://uviewui.com/)
+- [luch-request](https://www.quanzhan.co/luch-request/)
 
 ## 额外功能
 - 封装接口请求工具
