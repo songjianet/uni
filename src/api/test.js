@@ -1,9 +1,9 @@
-import { axios } from '../utils/request'
+import { request } from '../utils/request'
 
 export function comment() {
-  return axios({
+  return request.middleware({
     url: 'https://cn1.api.wfblog.net/163.comment.php',
-    method: 'get',
+    method: 'GET',
     data: {
       type: 1,
       page: 1

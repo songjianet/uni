@@ -2441,11 +2441,6 @@ aws4@^1.8.0:
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha1-oXs6jqgRBg501H0wYSJACtRJeuI=
 
-axios-uni@^1.0.2-0:
-  version "1.0.2-0"
-  resolved "https://registry.npm.taobao.org/axios-uni/download/axios-uni-1.0.2-0.tgz#d6d53906c08d36e7ab7fc64b54cc18392860980d"
-  integrity sha1-1tU5BsCNNuerf8ZLVMwYOShgmA0=
-
 babel-eslint@^10.1.0:
   version "10.1.0"
   resolved "https://registry.npm.taobao.org/babel-eslint/download/babel-eslint-10.1.0.tgz?cache=0&sync_timestamp=1582676022693&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-eslint%2Fdownload%2Fbabel-eslint-10.1.0.tgz#6968e568a910b78fb3779cdd8b6ac2f479943232"
@@ -7202,6 +7197,11 @@ lru-cache@^5.1.1:
   integrity sha1-HaJ+ZxAnGUdpXa9oSOhH8B2EuSA=
   dependencies:
     yallist "^3.0.2"
+
+luch-request@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/luch-request/download/luch-request-3.0.4.tgz#5d713144a6bf01b97b81212ff6d2c02855da11cc"
+  integrity sha1-XXExRKa/Abl7gSEv9tLAKFXaEcw=
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
