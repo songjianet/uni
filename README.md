@@ -1,19 +1,49 @@
-# my-project
+# uni-app + uView UI
 
-## Project setup
+## 相关链接
+- [uni-app](https://uniapp.dcloud.io/)
+- [uView UI](http://uviewui.com/)
+
+## 额外功能
+- 封装接口请求工具
+- 提供json转formData函数
+- 引入uView UI组件库
+- 基于uView UI组件库实现小程序底部导航
+- 增加提交代码时的eslint检查
+
+## 安装项目依赖
 ```
 yarn install
+npm install
+cnpm install
 ```
 
-### Compiles and hot-reloads for development
+## 运行在微信小程序
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+yarn run dev:mp-weixin
+npm run dev:mp-weixin
+cnpm run dev:mp-weixin
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 编译到微信小程序
+```
+yarn run build:mp-weixin
+npm run build:mp-weixin
+cnpm run build:mp-weixin
+```
+
+## 进行eslint检查
+```
+yarn run lint
+npm run lint
+cnpm run lint
+```
+
+## 进行eslint自动修正
+```
+yarn run lint --fix
+npm run lint --fix
+cnpm run lint --fix
+```
+
+
