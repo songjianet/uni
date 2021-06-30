@@ -1,26 +1,42 @@
-import axios from 'axios-uni'
+import Request from 'luch-request'
 
-// 创建 axios 实例
-const service = axios.create({
-  timeout: 6000 // 请求超时时间
+// 创建实例
+const http = new Request()
+
+// 统一配置http公共参数
+http.setConfig(config => {
+  // config.baseURL = ''
+  config.timeout = 6000
+
+  return config
 })
 
-const err = error => {
-  // if (error.response) {
-  //   if (error.response.status === 401) {}
-  // }
-  return Promise.reject(error)
+// 请求拦截器回调
+const config = config => {
+  config.header['Content-Type'] = 'application/json'
+
+  return config
 }
 
-// request interceptor
-service.interceptors.request.use(config => {
-  // config.headers['Content-Type'] = 'application/json'
-  return config
-}, err)
+// 请求拦截器失败回调
+const reqErr = err => {
+  return Promise.reject(err)
+}
 
-// response interceptor
-service.interceptors.response.use(response => {
-  return response.data
-}, err)
+// 响应拦截器回调
+const res = res => {
+  return res.data
+}
 
-export { service as axios }
+// 响应拦截器失败回调
+const resErr = err => {
+  return Promise.reject(err)
+}
+
+// 请求拦截器
+http.interceptors.request.use(config, reqErr)
+
+// 响应拦截器
+http.interceptors.response.use(res, resErr)
+
+export { http as request }
