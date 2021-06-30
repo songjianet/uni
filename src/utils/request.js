@@ -1,20 +1,20 @@
 import Request from 'luch-request'
+import env from '../env'
 
 // 创建实例
 const http = new Request()
 
 // 统一配置http公共参数
 http.setConfig(config => {
-  // config.baseURL = ''
-  config.timeout = 6000
+  config.baseURL = env.api.baseURL
+  config.timeout = env.api.timeout
+  config.header = env.api.header
 
   return config
 })
 
 // 请求拦截器回调
 const config = config => {
-  config.header['Content-Type'] = 'application/json'
-
   return config
 }
 
