@@ -21,7 +21,7 @@
 - 默认支持小程序分包，并支持分包优化
 
 
-## 安装项目依赖
+### 安装项目依赖
 
 ```
 yarn install
@@ -30,7 +30,7 @@ cnpm install
 ```
 
 
-## 运行在微信小程序
+### 运行在微信小程序
 
 ```
 yarn run dev:mp-weixin
@@ -38,7 +38,7 @@ npm run dev:mp-weixin
 cnpm run dev:mp-weixin
 ```
 
-## 编译到微信小程序
+### 编译到微信小程序
 ```
 yarn run build:mp-weixin
 npm run build:mp-weixin
@@ -46,7 +46,7 @@ cnpm run build:mp-weixin
 ```
 
 
-## 进行eslint检查
+### 进行eslint检查
 
 ```
 yarn run lint
@@ -55,7 +55,7 @@ cnpm run lint
 ```
 
 
-## 进行eslint自动修正
+### 进行eslint自动修正
 
 ```
 yarn run lint --fix
