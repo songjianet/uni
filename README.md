@@ -1,4 +1,4 @@
-## uni-app-frame
+## uniapp-frame
 
 > 基于`uni-app`搭建的基础业务轮子
 
